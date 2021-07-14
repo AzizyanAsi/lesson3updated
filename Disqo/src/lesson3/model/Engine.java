@@ -15,11 +15,11 @@ public class Engine {
         this.mileage = mileage;
     }
 
-    public Engine copy(Engine engine) {
+    public Engine copy() {
         Engine cloneEngine = new Engine();
-        cloneEngine.setHorsePower(engine.getHorsePower());
-        cloneEngine.setMileage(engine.getMileage());
-        cloneEngine.setWeight(engine.getWeight());
+        cloneEngine.setHorsePower(this.getHorsePower());
+        cloneEngine.setMileage(this.getMileage());
+        cloneEngine.setWeight(this.getWeight());
         return cloneEngine;
     }
 
